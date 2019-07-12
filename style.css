@@ -1,0 +1,13 @@
+body
+{
+	background-color: blue;
+}
+.text
+{
+	color: white;
+}
+input
+{
+	border-radius: 10px;
+	outline: none;
+}
