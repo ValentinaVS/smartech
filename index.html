@@ -1,28 +1,50 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	<title>
-	</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Title</title>
 </head>
+<body background="img/fon.jpg">
+      <p style="margin: 100px -5px -5px 1450px; font-size: 24pt; font-family: Verdana"><b>Sing up</b>
+        <br><p style="margin: 100px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Full Nam</b>
+      <br><label>
+       <i><input value="Name..." maxlength="30"
+                  onfocusin="if (this.value == 'Name...') {this.value=''}"
+                 onblur="if (this.value === '') {this.value='Name...'}" style="font-size: 14pt"/></i>
+      </label>
+        <br><p style="margin: 30px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Username</b>
+      <br><label>
+      <input value="Username..." maxlength="30"
+                 onfocusin="if (this.value == 'Username...') {this.value=''}"
+                 onblur="if (this.value === '') {this.value='Username...'}" style="font-size: 14pt"/>
+    </label>
+        <br><p style="margin: 30px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Email</b>
+    <br><label>
+      <input value="Email address..." maxlength="30"
+                  onfocusin="if (this.value == 'Email address...') {this.value=''}"
+                  onblur="if (this.value === '') {this.value='Email address...'}" style="font-size: 14pt"/>
+    </label>
+        <br><p style="margin: 30px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Password</b>
+    <br><label>
+      <input value="******" maxlength="30" type="password"
+                 onfocusin="if (this.value == '******') {this.value=''}"
+                 onblur="if (this.value === '') {this.value='******'}" style="font-size: 14pt"/>
+    </label>
+        <br><p style="margin: 30px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Password Confirmation</b>
+    <br><label>
+      <input value="******" maxlength="30" type="password"
+                  onfocusin="if (this.value == '******') {this.value=''}"
+      onblur="if (this.value === '') {this.value='******'}" style="font-size: 14pt"/>
+    </label>
 
-<body id="b">
-	<big><p align="center" class="text" style="font-size:24pt"> Hello World</p></big>
-	
-	<p align="center"><input type="button" onclick="chcol()" value="Switch Color" style="font-size:12pt" id="t"/></p>
 
-
-
-	<script>
-		var elem = document.getElementById ('t');
-		t.onclick = function()
-		{
-			if (b.style.backgroundColor) b.style.backgroundColor = "";
-			else b.style.backgroundColor = "#c00";
-		}
-	</script>
-			
+    <br><br>
+      <button style="width: 166px; height: 30px; margin: 0px -5px -5px 10px;" >
+     <img style="margin: -10px -5px -5px -67px; position: absolute;" src="img/knopka.png"/>
+      Sign Up
+    </button>
+        <br><br><input type="checkbox" style="margin: 0px -5px 30px 0px;"><p style="margin: -46px -5px -5px 1470px;">I accept Terms and Conditions</p>
+        <script src="script.js"></script>
 </body>
 </html>

@@ -1,13 +1,6 @@
-body
-{
-	background-color: blue;
-}
-.text
-{
-	color: white;
-}
-input
-{
-	border-radius: 10px;
-	outline: none;
+input {
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
 }
