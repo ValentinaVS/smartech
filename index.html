@@ -5,46 +5,70 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Title</title>
 </head>
-<body background="fon.jpg">
-      <p style="margin: 100px -5px -5px 1450px; font-size: 24pt; font-family: Verdana"><b>Sing up</b>
-        <br><p style="margin: 100px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Full Nam</b>
-      <br><label>
-       <i><input value="Name..." maxlength="30"
-                  onfocusin="if (this.value == 'Name...') {this.value=''}"
-                 onblur="if (this.value === '') {this.value='Name...'}" style="font-size: 14pt"/></i>
-      </label>
-        <br><p style="margin: 30px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Username</b>
-      <br><label>
-      <input value="Username..." maxlength="30"
-                 onfocusin="if (this.value == 'Username...') {this.value=''}"
-                 onblur="if (this.value === '') {this.value='Username...'}" style="font-size: 14pt"/>
-    </label>
-        <br><p style="margin: 30px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Email</b>
-    <br><label>
-      <input value="Email address..." maxlength="30"
-                  onfocusin="if (this.value == 'Email address...') {this.value=''}"
-                  onblur="if (this.value === '') {this.value='Email address...'}" style="font-size: 14pt"/>
-    </label>
-        <br><p style="margin: 30px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Password</b>
-    <br><label>
-      <input value="******" maxlength="30" type="password"
-                 onfocusin="if (this.value == '******') {this.value=''}"
-                 onblur="if (this.value === '') {this.value='******'}" style="font-size: 14pt"/>
-    </label>
-        <br><p style="margin: 30px -5px -5px 1450px; font-size: 15pt; font-family: Verdana"><b>Password Confirmation</b>
-    <br><label>
-      <input value="******" maxlength="30" type="password"
-                  onfocusin="if (this.value == '******') {this.value=''}"
-      onblur="if (this.value === '') {this.value='******'}" style="font-size: 14pt"/>
-    </label>
+<body>
+  <div id="osnova">
+      <div id="left"><img src="img/background.png">
+         <header><img src="img/logo.png"></header>
+
+      <div id="right">
+          <div id="first"><h2>Sing up</h2></div>
+            <div id="reg">
+                <b>Full Name</b>
+                <p> <input value="Name..." maxlength="25"
+                     onfocusin="if (this.value == 'Name...') {this.value=''}"
+                           onblur="if (this.value === '') {this.value='Name...'}" style="font-size: 14pt"/> </p>
+            </div>
+
+
+            <div id="reg">
+              <b>Username</b>
+              <p> <input value="Username..." maxlength="25"
+                         onfocusin="if (this.value == 'Username...') {this.value=''}"
+                         onblur="if (this.value === '') {this.value='Username...'}" style="font-size: 14pt"/> </p>
+            </div>
+
+             <div id="reg">
+               <b>Email</b>
+               <p> <input value="Email address..." maxlength="25"
+                     onfocusin="if (this.value == 'Email address...') {this.value=''}"
+                     onblur="if (this.value === '') {this.value='Email address...'}" style="font-size: 14pt"/> </p>
+              </div>
+
+               <div id="reg">
+                   <b>Password</b>
+                    <p> <input value="******" maxlength="25"
+                     onfocusin="if (this.value == '******') {this.value=''}"
+                     onblur="if (this.value === '') {this.value='******'}" style="font-size: 14pt"/> </p>
+               </div>
+
+
+               <div id="reg">
+                 <b>Password Confirmation</b>
+                 <p> <input value="******" maxlength="25"
+                     onfocusin="if (this.value == '******') {this.value=''}"
+                     onblur="if (this.value === '') {this.value='******'}" style="font-size: 14pt"/> </p>
+                </div>
+
+      </div>
+
+      </div>
+
+  </div>
 
 
     <br><br>
-      <button style="width: 166px; height: 30px; margin: 0px -5px -5px 10px;" >
-     <img style="margin: -10px -5px -5px -67px; position: absolute;" src="knopka.png"/>
-      Sign Up
-    </button>
-        <br><br><input type="checkbox" style="margin: 0px -5px 30px 0px;"><p style="margin: -46px -5px -5px 1470px;">I accept Terms and Conditions</p>
-        <script src="script.js"></script>
+
+        <button>
+        <!--<img style="margin: -10px -5px -5px -67px; position: absolute;" src="img/knopka.png"/>-->
+       Sign Up
+        </button>
+
+
+      <div id="vibor">
+        <br><br><input type="checkbox">I accept Terms and Conditions</p>
+
+      </div>
+
+      <script src="script.js"></script>
 </body>
 </html>
