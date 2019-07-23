@@ -7,68 +7,49 @@
 </head>
 <body>
   <div id="osnova">
-      <div id="left"><img src="img/background.png">
-         <header><img src="img/logo.png"></header>
-
+      <div id="left"><img src="img/background1.png">
       <div id="right">
-          <div id="first"><h2>Sing up</h2></div>
+          <div id="first"><h2> Sign Up </h2></div> <br>
             <div id="reg">
                 <b>Full Name</b>
-                <p> <input value="Name..." maxlength="25"
-                     onfocusin="if (this.value == 'Name...') {this.value=''}"
-                           onblur="if (this.value === '') {this.value='Name...'}" style="font-size: 14pt"/> </p>
+              <p><input placeholder="Name..." maxlength="45"></p>
             </div>
 
 
             <div id="reg">
               <b>Username</b>
-              <p> <input value="Username..." maxlength="25"
-                         onfocusin="if (this.value == 'Username...') {this.value=''}"
-                         onblur="if (this.value === '') {this.value='Username...'}" style="font-size: 14pt"/> </p>
+              <p><input placeholder="Username..." maxlength="45"></p>
             </div>
 
              <div id="reg">
                <b>Email</b>
-               <p> <input value="Email address..." maxlength="25"
-                     onfocusin="if (this.value == 'Email address...') {this.value=''}"
-                     onblur="if (this.value === '') {this.value='Email address...'}" style="font-size: 14pt"/> </p>
+               <p><input placeholder="Email address..." maxlength="45"></p>
               </div>
 
                <div id="reg">
                    <b>Password</b>
-                    <p> <input value="******" maxlength="25"
-                     onfocusin="if (this.value == '******') {this.value=''}"
-                     onblur="if (this.value === '') {this.value='******'}" style="font-size: 14pt"/> </p>
+                       <p><input placeholder="******" maxlength="45"></p>
                </div>
 
 
                <div id="reg">
                  <b>Password Confirmation</b>
-                 <p> <input value="******" maxlength="25"
-                     onfocusin="if (this.value == '******') {this.value=''}"
-                     onblur="if (this.value === '') {this.value='******'}" style="font-size: 14pt"/> </p>
+                 <p><input placeholder="******" maxlength="45"></p>
                 </div>
 
-      </div>
 
+     <div id="reg">
+      <div id="vibor">
+        <p><input type="checkbox"> I accept Terms and Conditions</p>
+
+      </div>
+        <br>
+       <button>Sign Up</button> <br>
+       </div>
       </div>
 
   </div>
-
-
-    <br><br>
-
-        <button>
-        <!--<img style="margin: -10px -5px -5px -67px; position: absolute;" src="img/knopka.png"/>-->
-       Sign Up
-        </button>
-
-
-      <div id="vibor">
-        <br><br><input type="checkbox">I accept Terms and Conditions</p>
-
-      </div>
-
+  </div>
       <script src="script.js"></script>
 </body>
 </html>
