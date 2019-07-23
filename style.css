@@ -10,11 +10,17 @@ input:focus::-webkit-input-placeholder{
   color: transparent;
 }
 
+
 body {
   font-family: Verdana, serif;
+  margin: 0;
 }
 
 #left {
+  background-size: cover;
+  background-image: url("img/background.png");
+}
+#all {
   width: 80%;
   height: 100%;
   display: flex;
@@ -25,26 +31,25 @@ body {
   height: 200px;
   display: flex;
   justify-content: flex-end;
-  padding: 5px 10px;
-  position: absolute;
-  left: -650px;
+  padding: 5px 0px;
 }
 #left header header img {
   width: 500px;
 }
 
 #right {
-  width: 70%;
+  width: 80%;
 }
 
 #first {
   font-size: 45px;
   font-weight: bold;
-  margin: 0 20px;
-  width: 200%;
+  margin: 0 auto;
+  width: 180%;
   text-align: left;
   white-space: normal;
-  line-height: 10px;
+  line-height: 106px;
+  padding: 0px 20px;
 }
 #reg {
   display: flex;
@@ -73,8 +78,10 @@ button {
 
 }
 
-#osnov {
+#osnova {
   width: 100%;
   height: 100%;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
