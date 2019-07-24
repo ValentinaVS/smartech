@@ -75,8 +75,35 @@ button {
   flex-direction: column;
   width: 300%;
   font-size: 14px;
-
 }
+
+label input {
+  display: none;
+}
+
+label span {
+  height: 12px;
+  width: 12px;
+  border: 2px solid gainsboro;
+  display: inline-block;
+  background-color: gainsboro;
+  border-radius: 2px;
+  padding: auto ;
+  position: relative;
+}
+
+[type=checkbox]:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  font-size: 14px;
+  color: green;
+}
+
+ checkbox + label {
+   cursor: pointer;
+ }
 
 #osnova {
   width: 100%;
