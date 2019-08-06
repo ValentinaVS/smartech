@@ -5,6 +5,7 @@ input {
   border-top: none;
   font-size: 14pt;
   width: 500px;
+  background: transparent;
 }
 
 input:focus::-webkit-input-placeholder{
@@ -12,7 +13,7 @@ input:focus::-webkit-input-placeholder{
 }
 
 html {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -24,12 +25,41 @@ body {
   background-size: cover;
   background-image: url("img/background.png");
   width: 168%;
+  display: flex;
 }
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 200px;
+}
+article {
+  flex: 1 200px;
+}
+article:nth-of-type(2) {
+  flex: 2 200px;
+  display: flex;
+  flex-flow: column;
+}
+article:nth-of-type(2) dir:first-child {
+  flex: 1 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
 #all {
   width: 100%;
   height: 100%;
-  display: flex;
   background-size: cover;
+  display: flex;
 }
 #left header {
   width: 100%;
@@ -41,10 +71,23 @@ body {
 #left header header img {
   width: 500px;
 }
-
-#right {
-  width: 80%;
+article:nth-of-type(2) {
+  flex: 2 200px;
+  display: flex;
+  flex-flow: column;
 }
+#right {
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-around;
+}
+section div {
+  font-size: calc(1px + 2vw);
+
+}
+
+
 
 .gr {
   color: green;
@@ -59,8 +102,10 @@ body {
   white-space: normal;
   line-height: 106px;
   padding: 0px 20px;
+
+  flex: 1;
 }
-#reg {
+.reg {
   display: flex;
   flex-direction: column;
   font-size: 25px;
@@ -68,6 +113,15 @@ body {
   margin: 0 auto;
   width: 80%;
   text-align: left;
+
+}
+.block {
+  display: flex;
+  flex-direction: column;
+}
+.pole {
+  display: flex;
+  flex-direction: row-reverse;
 }
 button {
   width: 166px;
